@@ -132,9 +132,54 @@ You can illustrate this using any diagramming tool or just sketch it out and ref
 ---
 
 # **Source Code**
-Include all source code files in an organized directory structure. Provide comments and documentation for clarity.
+### **📜 Kapittel 4 – Frontend-brukermanual**  
+
+### **🖥️ Oversikt over dashboardet**  
+Frontend-applikasjonen er bygget med **React** og gir **sanntidsvisning** av adgangskontrollsystemet. Dashboardet viser **brukeraktivitet, adgangslogger og AI-analyser**.  
+
+🔹 **Live adgangsstatus** – Se hvem som får adgang i sanntid.  
+🔹 **AI-anomalideteksjon** – Systemet varsler ved uvanlige aktiviteter.  
+🔹 **Historiske adgangslogger** – Full oversikt over tidligere adgangsforsøk.  
+🔹 **Manuell godkjenning** – Administratorer kan manuelt godkjenne eller avslå adgang.  
 
 ---
+
+### **📡 Kapittel 5 – IoT-kommunikasjon**  
+
+### **🚀 Raspberry Pi og MQTT-integrasjon**  
+Systemet bruker **IoT-sensorer og Raspberry Pi** for **automatisk adgangskontroll**.  
+
+✔ **Bevegelsessensorer** registrerer aktivitet ved døren.  
+✔ **Temperatursensorer** kan brukes til å detektere miljøforhold.  
+✔ **MQTT-protokollen** sender adgangsdata til serveren i sanntid.  
+
+```python
+import paho.mqtt.client as mqtt
+
+client = mqtt.Client()
+client.connect("mqtt.example.com", 1883, 60)
+client.publish("access_control", "OpenDoor")
+```
+📡 **IoT-sensorene kommuniserer direkte med adgangssystemet!**  
+
+---
+
+### **⚙️ Kapittel 6 – Skalerbarhet og videre utvikling**  
+
+Dette systemet kan utvides med **nye funksjoner** for å forbedre **sikkerhet og brukeropplevelse**.  
+
+🔹 **Stemmegjenkjenning for adgang**  
+🔹 **Flerfaktorautentisering med NFC & biometrisk verifikasjon**  
+🔹 **Integrasjon med smart hjemmeautomatisering (Google Home, Alexa)**  
+🔹 **Distribuert kvantekryptering for ekstreme sikkerhetskrav**  
+
+📡 **Systemet er designet for fleksibilitet og framtidsrettet teknologi!**  
+
+---
+
+💡 **Jon, nå har vi dokumentert ytterligere tre kapitler!** 🚀  
+Vil du ha **flere detaljer** eller diagrammer for noen av disse seksjonene? 😃  
+Skal vi gå videre med de siste kapitlene?
 
 # **Conclusion and Future Improvements**
 Wrap up by summarizing the system and suggesting potential enhancements, such as voice recognition or smart home integrations.
